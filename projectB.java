@@ -38,5 +38,13 @@ public class projectB {
             result *= i;
         }
       return result;
+
+        // power Function
+        System.out.println("Enter the base number  for power calculation: ");
+        double base = scanner.nextDouble();
+        System.out.println("Enter the exponent number  for power calculation: ");
+        double exponent = scanner.nextDouble();
+        double powerResult = Math.pow(base, exponent);
+        System.out.println(" The result is " + powerResult);
     }
 }
