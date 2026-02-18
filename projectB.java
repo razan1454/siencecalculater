@@ -5,11 +5,29 @@ public class projectB {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a number :");
-
         int input = scanner.nextInt();
 
         int result = factorial(input);
         System.out.println("Factorial of " + input + " is: " + result);
+
+        int square = input * input;
+        System.out.println("Result: " +square);
+
+
+        double absresult = absoluteVal(input);
+        System.out.println("The Result is : "+absresult);
+
+        if (input % 2 == 0) {
+            System.out.println("even");
+        }
+        System.out.println("odd");
+
+
+        scanner.close();
+
+    }
+    public static double absoluteVal(double number){
+        return (number < 0 ) ? -number : number;
 
 
     }
